@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -19,6 +19,8 @@
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/img/icon.png" />
   <link rel="shortcut icon" href="%PUBLIC_URL%/img/icon.png" />
   <link rel="favicon" href="%PUBLIC_URL%/img/icon.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
   <meta property="og:title" content="FIUSAC.app®" />
   <meta property="og:description"
     content="Está es una página independiente de la facultad de ingeniería, para compartir, descargar recursos y ver los cursos de la facultad." />
@@ -39,13 +41,12 @@
 		overflow:hidden;
 		background:url(curves.jpg);
 		background-size:cover;
-		background-position:0 -20px;
+		background-position:-40px -20px;
 		background-repeat:no-repeat;
 		font-family:'Roboto',Roboto;
 	}
 	main{
 		display: flex;
-		padding:0px 50px;
 		justify-content:space-between;
 		position:absolute;
 		width:100%;
@@ -75,12 +76,14 @@
 		display:block;
 		position:relative;
 		text-align:right;
+			
 	}
 	main div p{
            font-size:2em;
 	   font-weight:550;
 	   width:300px;
-	   color:#333;
+	   color:#555;
+		float:right;
 	margin:0;
 	   margin-top:15px;
 	   line-height:25px;
@@ -92,12 +95,13 @@
 	main div span{
            font-size:1.7em;
 	   color:#555;
+		display:block;
 	}
 	main div #mask{
 		
 		position:absolute;
 		width:425px;
-		left:-33px;
+		left:7px;
 		-webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
@@ -106,7 +110,7 @@
   main div #notch{
     position:absolute;
     top:12px;
-    left:152px;
+    left:192px;
     z-index:2;
     width:54px;
   }
@@ -116,19 +120,31 @@
     right:0;
     width:300px;
   }
+#layer{
+position:relative;
+  padding: 0 0 0 40px;
+  }
+#info{
+padding: 0 20px 0 0;
+  }
+
+
+
 </style>
 <body>
 	<main>
-		<div>
+		<div id="layer">
   		<img id="mask" src="./mask.png"/>
       <img id="notch" src="./mask2.png"/>
   		<iframe src="https://fiusac.web.app/" width="360" height="640"></iframe>
   	</div>
-	 <div>
+	 <div id="info">
 		 <h1>¡Muy pronto!</h1>
 		 <span>Accesibilidad instantanea</span>
-		 <p>Explora todas las posibilidades, crea una cuenta ahora mismo<p>
-	</div>
+		 <p>Explora todas las posibilidades, crea una cuenta ahora mismo <br/> <br/><i class="fab fa-github"></i>
+<i class="fab fa-facebook"></i>
+</p>
+</div>
 	</main>
   <img id="banner" src="./banner.jpg"/>
 </body>
