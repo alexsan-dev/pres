@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>FIUSAC.app®</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="keywords"
+    content="usac, USAC, FIUSAC, ingeniería, u, universidad, fiusac, facultad, de, ingenieria, semestre, ingreso, primer, departamento, de, matemática, educación, tareas, archivos">
+  <meta name="Author" content="AlexSantos">
+  <meta name="Robots" content="follow">
+  <meta name="description"
+    content="Está es una página independiente de la facultad de ingeniería, para compartir, descargar recursos y ver los cursos de la facultad.">
+  <meta name="MobileOptimized" content="yes">
+  <meta name="HandheldFriendly" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="FIUSAC.app®">
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/img/icon.png" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/img/icon.png" />
+  <link rel="favicon" href="%PUBLIC_URL%/img/icon.png" />
+  <meta property="og:title" content="FIUSAC.app®" />
+  <meta property="og:description"
+    content="Está es una página independiente de la facultad de ingeniería, para compartir, descargar recursos y ver los cursos de la facultad." />
+  <meta property="og:image" content="https://fiusac.web.app/img/banner.jpg" />
+  <meta property="og:image:secure_url" content="https://fiusac.web.app/img/banner.jpg" />
+  <meta property="og:url" content="https://fiusac.web.app/" />
+  <meta property="og:site_name" content="FIUSAC.app®" />
+  <meta property="og:type" content="website" />
+  <meta property="fb:app_id" content="2517340731610663" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" />
+  <meta name="theme-color" content="#1E88E5" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+</head>
+<style>
+	body{
+		overflow:hidden;
+		background:url(curves.jpg);
+		background-size:cover;
+		background-repeat:no-repeat;
+		font-family:'Roboto',Roboto;
+	}
+	main{
+		display: flex;
+		padding:0px 50px;
+		justify-content:space-between;
+		
+		position:absolute;
+		width:100%;
+		top:50%;
+		left:0%;
+		transform:translate(0%, -50%);
+	}
+	iframe{
+		border:none;
+		-webkit-appareance:none;
+		box-shadow:none;
+		position: relative;
+		top:21px;
+		border-radius:30px 30px 0 0;
+		outline:none;
+	}
+	iframe::before{
+                content:'';
+		width:340px;
+		height:50px;
+		position:relative;
+		top:0;
+		left:0;
+		background:#1976D2;
+	}
+	main div{
+		display:block;
+		position:relative;
+		text-align:right;
+	}
+	main div p{
+           font-size:2em;
+	   font-weight:550;
+	   padding-left:100px;
+	   color:#333;
+	   margin-top:15px;
+	   line-height:25px;
+
+	}
+	main div h1{
+           font-size:4em;
+	   margin:0
+	}
+	main div span{
+           font-size:1.7em;
+	   color:#555;
+	}
+	main div #mask{
+		
+		position:absolute;
+		width:425px;
+		left:-33px;
+		-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;   
+	}
+  main div #notch{
+    position:absolute;
+    top:12px;
+    left:152px;
+    z-index:2;
+    width:54px;
+  }
+  #banner{
+    position:fixed;
+    bottom:0;
+    right:0;
+    width:300px;
+  }
+</style>
+<body>
+	<main>
+		<div>
+  		<img id="mask" src="./mask.png"/>
+      <img id="notch" src="./mask2.png"/>
+  		<iframe src="https://fiusac.web.app/" width="360" height="640"></iframe>
+  	</div>
+	 <div>
+		 <h1>¡Muy pronto!</h1>
+		 <span>Accesibilidad instantanea</span>
+		 <p>Explora todas las posibilidades, crea una cuenta ahora mismo<p>
+	</div>
+	</main>
+  <img id="banner" src="./banner.jpg"/>
+</body>
+</html>
